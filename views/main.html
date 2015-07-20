@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block main %}
+<div class="container">
+    <div class="col-lg-1 col-md-2">
+        <button class="btn btn-lg btn-primary">Login</button>
+    </div>
+    <div class="col-lg-8 col-md-10">
+       <div id="view"></div>
+    </div>
+</div>
+
+{% include './users/login.html' %}
+
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript">
+{% include './users/backbone-users.js' %}
+</script>
+{% endblock %}
