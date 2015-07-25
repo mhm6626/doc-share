@@ -10,7 +10,7 @@ var user = new User({
     password: '123456'
 });
 user.save({created: Date.now()});
-
+var ev ;
 var DocumentRow = Backbone.View.extend({
 
     tagName: "div",
@@ -33,8 +33,8 @@ var DocumentRow = Backbone.View.extend({
         console.log(this.el);
     },
 
-    btnSave: function (e) {
-        console.log(this.model.toJSON().email)
+    btnSave: function (a ,b,c,d) {
+       ev=a
     }
 });
 var v = new DocumentRow({
