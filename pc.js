@@ -8,14 +8,11 @@ function isLeap(y) {
 	return false;
 }
 
-for (var i = 1; i < 1600; i++) {
+var OFFSET_DAYS = parseInt(621 * 365.2425 + 31 + 28 + 20)
 
-	if (isLeap(i)) {
-		//console.log(i);
-	}
-}
 
-fs.readFile('./2', function(err, data) {
+
+/*fs.readFile('./2', function(err, data) {
 	if (err)
 		throw err;
 	var a = data.toString().split('\n');
@@ -30,4 +27,4 @@ fs.readFile('./2', function(err, data) {
 			oldType = newType;
 		}
 	}
-});
+});**/
