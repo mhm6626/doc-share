@@ -3,12 +3,12 @@ const fs = require('fs');
 function isPersianLeap(y) {
 	y %= 128;
 	var x = [0, 4, 8, 12, 16, 20, 24, 28, 33, 37, 41, 45, 49, 53, 57, 61, 66, 70, 74, 78, 82, 86, 90, 95, 99, 103, 107, 111, 115, 119, 123];
-	//console.log(x.length)
+	
 	if (x.indexOf(y) > -1)
 		return true;
 	return false;
 }
-isPersianLeap(55) 
+
 function isGregorianLeap(y) {
 	return ((y % 4 == 0) && (y % 100 != 0)) || (y % 400 == 0);
 }
