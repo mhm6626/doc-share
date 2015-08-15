@@ -90,7 +90,7 @@ function isLeap($y)
 {
 
 }
-*/
+*
 $t = time();
 for ($y = 622; $y < 700; $y++) {
 	$m = rand(1, 12);
@@ -105,5 +105,6 @@ for ($y = 621; $y < 700; $y++) {
 	print "$p\n";
 }*/
 
+print gregorian_to_jalali(1931, 3, 21, '-') . "\n";
 
-print "\n-------------------------\nTime = ". (time() - $t) . "\n";
+//print "\n-------------------------\nTime = ". (time() - $t) . "\n";
